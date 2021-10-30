@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="m3style.css">
+        <title>Food LLC aka Module 3 Solution Page</title>
+    <head>
+    <body>
+        <header class="header">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Food LLC</a>
+                <ul class="navbarMenu">
+                    <li class="nav-item"><a href="#m1" class="navLink">Chicken</a></li>
+                    <li class="nav-item"><a href="#m2" class="navLink">Beef</a></li>
+                    <li class="nav-item"><a href="#m3" class="navLink">Sushi</a></li>
+                </ul>
+                <div class="barmenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+            <script>
+                const barmenu = document.querySelector(".barmenu");
+                const navbarMenu = document.querySelector(".navbarMenu");
+
+                barmenu.addEventListener("click", mobileMenu);
+                function mobileMenu() {
+                    barmenu.classList.toggle("active");
+                    navbarMenu.classList.toggle("active");
+                }
+                const navLink = document.querySelectorAll(".nav-link");
+                navLink.forEach(n => n.addEventListener("click", closeMenu));
+                function closeMenu() {
+                    barmenu.classList.remove("active");
+                    navbarMenu.classList.remove("active");
+                }
+            </script>
+        </header>
+     
+        <div class="container">
+            <div class="heading">
+                <p>Our Menu</p>
+            </div>
+             <div class="row">
+                 <div class="menuItem1" id="m1">
+                    <p class="FoodHeading">Chicken</p>
+                     <p class="filler">
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+
+                     </p>
+                </div>
+                <div class="menuItem2" id="m2">
+                    <p class="FoodHeading">Beef</p>
+                    <p class="filler">
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                    </p>
+                </div>
+                <div class="menuItem3" id="m3">
+                    <p class="FoodHeading">Sushi</p>
+                    <p class="filler">
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                        I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver!  I want chicken, I want liver, Meow-Mix Meow-Mix, please deliver! 
+                    </p>
+                </div>
+          </div>
+     </div>
+    </body>
+</html>

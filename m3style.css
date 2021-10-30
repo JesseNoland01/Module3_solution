@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    border-bottom: 1px solid black;
+    background-color: rgb(192, 106, 106);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.barmenu {
+    display: none;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(112, 139, 214);
+}
+.navbarMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item {
+    margin-left: 5rem;
+}
+.navLink {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: black;
+}
+.navLink:hover {
+    color: red;
+}
+.nav-logo {
+    font-size: 2.0rem;
+    font-weight: 400;
+    color:white;
+}
+@media only screen and (max-width: 768px) {
+    .navbarMenu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: darkcyan;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        
+    }
+    .navbarMenu.active {
+        left:0;
+    }
+    .nav-item {
+        margin:2.5rem 0;
+    }
+    .barmenu {
+        display:block;
+        cursor:pointer;
+    }
+    .barmenu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .barmenu.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    .barmenu.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
+.heading {
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+body {
+    background-color: rgb(231, 231, 165);
+}
+.menuItem1 {
+    background-color: rgb(202, 120, 120);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 1000px;
+    font-size: 20px;
+    overflow: auto;
+}
+.FoodHeading {
+    font-size: larger;
+    font-weight: 300;
+    text-decoration: underline;
+    padding: 10px;
+}
+.menuItem2 {
+    background-color: rgb(64, 146, 119);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 1000px;
+    font-size: 20px;
+    overflow: auto;
+}
+.menuItem3 {
+    background-color: rgb(70, 141, 97);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 1000px;
+    font-size: 20px;
+    overflow: auto;
+}
+.grid-container {
+    display: grid;
+    grid-auto-columns: auto;
+}
